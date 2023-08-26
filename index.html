@@ -54,7 +54,7 @@ function checkDataTypes (Data1,Data2,Data3) {
     console.log(typeof(Data3));
 }
 
-checkDataTypes(false, "sagor",  420);
+checkDataTypes("sagor",420, false);
 
 
 
@@ -82,7 +82,7 @@ else  {
 }
 
 }
-checkLeapYear (2024);
+checkLeapYear (2044);
 
 
 
@@ -95,54 +95,42 @@ checkLeapYear (2024);
 //Problem-03
 
 
-//function evalNumbers(num1,num2,subtract, add) {
-    
-   
-   
-    
+function evalNumbers(num1,num2,peramitar) {
 
- //if(subtract){
-   // console.log(num1-num2);
-//}
-
-
-//else if(add){
-   // console.log(num1*num2);
-//}
-//else{
-  //  console.log("invalid Operations");
-//}
-//}
-
-
-//evalNumbers(300,200,"subtract" ,"add");
-
-
-
-
-
-
-
-
-//Problem-03
-
-
-function  evalNumbers(num1,num2 ,add) {
- if(add) {  
-var add= num1+num2;
-console.log(add);
- }
-else if (subtract){
-var subtract=num1-num2;
-console.log(subtract);
-
+ if("add"){
+    console.log(num1+num2);
 }
+
+else if("subtract"){
+    console.log(num1-num2);
+}
+
+else if(multiply){
+    console.log(num1*num2);
+}
+
+else if( divide){
+    console.log(num1/num2);
+}
+
+else if( modulus){
+    console.log(num1%num2);
+}
+
 else{
-    console.log("invalid Operations");
-}
+  console.log("invalid Operations");
 }
 
-evalNumbers(20,10, "subtract");
+}
+
+
+evalNumbers(800,400,"add");
+
+
+
+
+
+
 
 
 
@@ -172,7 +160,7 @@ else{
 }
 
 }
-findLargest(401,40,70);
+findLargest(401,405,720);
 
 
 
